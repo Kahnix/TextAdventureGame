@@ -18,3 +18,14 @@ class Player:
 	def Eat(self, food):
 		self.health += food.heal
 		print("The " + food.name + " healed you for " + str(food.heal) + " hp, and your current hp is now " + str(self.health))
+
+class NonPlayable:
+	def __init__(self, name, health, damage):
+		self.name = name
+		self.health = health
+		self.damage = damage
+
+	def __str__(self):
+		return \
+		"Name: {} \nHealth: {} \nDamage {}\n".format(self.name,self.health,self.damage)
+
