@@ -11,10 +11,10 @@ class Items:
         "Item name: " + self.name + "\n" \
         + "Item description: " + self.description + "\n" \
         + "Weight: " + str(self.weight) + "G\n" \
-        + "Heals: " + str(self.healthImpact) + " HP"
+        + "Heals: " + str(self.healthImpact) + " HP\n"
     else:
         return \
         "Item name: " + self.name + "\n" \
         + "Item description: " + self.description + "\n" \
         + "Weight: " + str(self.weight) + "G\n" \
-        + "Damages: " + str(self.healthImpact) + " HP"
+        + "Damages: " + str(self.healthImpact) + " HP\n"
