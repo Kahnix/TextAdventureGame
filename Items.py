@@ -1,2 +1,18 @@
 class Items:
-	def __init__(self):
+  def __init__(self, name, description, weight, heal, damage):
+    self.name = name
+    self.description = description 
+    self.weight = weight 
+    self.heal = heal
+    self.damage = damage
+  
+  def __str__(self):
+    return \
+    "Item name: " + self.name + "\n" \
+    + "Item description: " + self.description + "\n" \
+    + "Weight: " + str(self.weight) + "G\n" \
+    + "Heals: " + str(self.heal) + " HP\n" \
+    + "Damages: " + str(self.damage) + " HP"
+
+Sandwich = Items("Sandwich", "A bacon lettuce and tomato sandwich", 5, 5, 0)
+print(Sandwich)
