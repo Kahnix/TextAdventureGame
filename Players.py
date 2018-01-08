@@ -16,8 +16,8 @@ class Player:
 		""".format(self.name, self.health, self.damage, self.hunger, self.thirst)
 
 	def Eat(self, food):
-		self.health += food.heal
-		print("The " + food.name + " healed you for " + str(food.heal) + " hp, and your current hp is now " + str(self.health))
+		self.health += food.healthImpact
+		print("The " + food.name + " healed you for " + str(food.healthImpact) + " hp, and your current hp is now " + str(self.health))
 
 class NonPlayable:
 	def __init__(self, name, health, damage):
