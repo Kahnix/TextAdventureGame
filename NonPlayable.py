@@ -11,3 +11,4 @@ class NonPlayable:
 
 Miguel = NonPlayable("Miguel", 100, 10)
 Kacper = NonPlayable("Kacper", 100, 10)
+
