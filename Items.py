@@ -13,6 +13,3 @@ class Items:
     + "Weight: " + str(self.weight) + "G\n" \
     + "Heals: " + str(self.heal) + " HP\n" \
     + "Damages: " + str(self.damage) + " HP"
-
-Sandwich = Items("Sandwich", "A bacon lettuce and tomato sandwich", 5, 5, 0)
-print(Sandwich)
