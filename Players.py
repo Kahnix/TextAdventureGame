@@ -23,7 +23,7 @@ class Player:
 		self.healthafter=character.health - self.damage
 
 		if self.healthafter >0:
-			print("You attacked "+character.name+" For " + str(self.damage) +", They now have " +str(character.health)+" health.")
+			print("You attacked "+character.name+" For " + str(self.damage) +", They now have " +str(self.healthafter)+" health.")
 		else:
 			print("You attacked "+character.name+" For " + str(self.damage) +", They are now dead,")
 
