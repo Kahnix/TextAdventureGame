@@ -28,7 +28,7 @@ class Player:
 			print("You attacked "+character.name+" For " + str(self.damage) +", They are now dead,")
 
 
-class NonPlayable:
+class NonPlayer:
 	def __init__(self, name, health, damage):
 		self.name = name
 		self.health = health
