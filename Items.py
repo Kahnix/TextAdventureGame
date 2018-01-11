@@ -8,13 +8,7 @@ class Item:
   def __str__(self):
     if self.healthImpact >= 0:
         return \
-        "Item name: " + self.name + "\n" \
-        + "Item description: " + self.description + "\n" \
-        + "Weight: " + str(self.weight) + "G\n" \
-        + "Heals: " + str(self.healthImpact) + " HP\n"
+        "Name: {}\nDescription: {}\nWeight: {}KG\nHeals: {}HP\n".format(self.name, self.description, self.weight, self.healthImpact)         
     else:
         return \
-        "Item name: " + self.name + "\n" \
-        + "Item description: " + self.description + "\n" \
-        + "Weight: " + str(self.weight) + "G\n" \
-        + "Damages: " + str(self.healthImpact) + " HP\n"
+        "Name: {}\nDescription: {}\nWeight: {}KG\nDamages: {}HP\n".format(self.name, self.description, self.weight, self.healthImpact)
