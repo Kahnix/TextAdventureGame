@@ -23,15 +23,6 @@ class gun(weapon):
 	def __init__(self):
 		self.penetrationDamage = penetrationDamage
 
-
-
-
-
-
-
-
-
-
 class excalibur(sharpWeapons):
 	def __init__(self):
 		super(excalibur, self).__init__()
