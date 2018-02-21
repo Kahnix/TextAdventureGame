@@ -54,4 +54,4 @@ class NonPlayer:
     def Attack(self, player):
         player.health -= self.damage
         print(f"{self.name} attacked you for {str(self.damage)}HP.\
-        You now have {str(player.health}HP")
+        You now have {str(player.health)}HP")
