@@ -1,5 +1,5 @@
 class Player:
-	bdef __init__(self,health,damage,hunger,thirst):
+	def __init__(self,health,damage,hunger,thirst):
 		self.health = health
 		self.damage = damage
 		self.hunger = hunger
