@@ -31,10 +31,10 @@ class Player:
         self.healthafter = character.health - self.damage
 
         if self.healthafter > 0:
-            print(f"You attacked {characer.name}. \
+            print(f"You attacked {character.name}. \
             He loses {str(self.damage)}HP")
         else:
-            print(f"You've killed {characer.name}")
+            print(f"You've killed {character.name}")
 
     def PickupItem(self, item):
             self.inventory.append(item)
