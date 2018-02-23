@@ -36,12 +36,13 @@ class Player:
         else:
             print(f"You've killed {characer.name}")
 
-    def pickupItem(self, item):
+    def PickupItem(self, item):
             self.inventory.append(item)
 
-    def checkInventory(self):
-            print(self.inventory)
-    
+    def CheckInventory(self):
+            for i in len(self.inventory): 
+                print(self.inventory[i].name)
+
     def Sleep(self):
         if self.health <= 90:
             self.health += 10
