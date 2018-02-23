@@ -1,5 +1,5 @@
 def Play():
-    pass
+    print("Hi")
 
 def Menu():
     print("\033[H\033[J")
@@ -20,11 +20,10 @@ aa    ]8I   88,   88,    ,88 88 88`"Yba, "8b,   ,aa 88
                 2) Quit""")
     
     options = [Play,exit]
-
-    Choice = int(input(""))
-    while Choice < len(options)-1 and Choice>0:
-           Choice=int(input(""))
-           options[Choice-1]()
+    Choice="x"
+    while (not (Choice.isnumeric() and int(Choice) <= len(options) and int(Choice)>0)):
+           Choice = input("")
+    options[int(Choice)-1]()
 Menu()
 
 
