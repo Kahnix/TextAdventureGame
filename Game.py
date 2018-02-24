@@ -1,9 +1,24 @@
+from src import Player
+from src import Item
+def initializeGame(): #Incase you want to initialize more than the player at startup
+    mainGuy = Player.Player(1000, 200, 10, 10,[])
+    return mainGuy
+
+
+
 def Play():
-    print("Hi")
+    initializeGame()
+    print("There is a story to be told here, but you wont hear it because it hasn't been written. \n \t \t Press Enter to Continue")
+    input()
+    Clear()
+    print("Boo")
+
+def Clear():
+    print("\033[H\033[J")
+
 
 def Menu():
-    print("\033[H\033[J")
-        
+    Clear()    
     print("""                                                       
                              88 88                              
             ,d               88 88                              
