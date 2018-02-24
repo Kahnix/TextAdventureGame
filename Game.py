@@ -1,10 +1,9 @@
 from src import Player
 from src import Item
+
 def initializeGame(): #Incase you want to initialize more than the player at startup
     mainGuy = Player.Player(1000, 200, 10, 10,[])
     return mainGuy
-
-
 
 def Play():
     initializeGame()
@@ -15,7 +14,6 @@ def Play():
 
 def Clear():
     print("\033[H\033[J")
-
 
 def Menu():
     Clear()    
