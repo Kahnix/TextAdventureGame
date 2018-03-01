@@ -8,7 +8,7 @@ def initializeGame(): #Incase you want to initialize more than the player at sta
 def Play():
     initializeGame()
     print("There is a story to be told here, but you wont hear it because it hasn't been written. \n \t \t Press Enter to Continue")
-    input()
+    input("> ")
     Clear()
     print("Boo")
 
@@ -28,13 +28,13 @@ aa    ]8I   88,   88,    ,88 88 88`"Yba, "8b,   ,aa 88
 `"YbbdP"'   "Y888 `"8bbdP"Y8 88 88   `Y8a `"Ybbd8"' 88          
                                                 (The b̵a̵d̵l̵y̵ well made text game)
                                                                 
-                1) Start
-                2) Quit""")
+                        1) Start
+                        2) Quit""")
     
     options = [Play,exit]
     Choice="x"
     while (not (Choice.isnumeric() and int(Choice) <= len(options) and int(Choice)>0)):
-           Choice = input("")
+           Choice = input("> ")
            
     options[int(Choice)-1]()
 Menu()
